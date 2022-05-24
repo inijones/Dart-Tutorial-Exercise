@@ -48,15 +48,18 @@ void main() {
   /// Ternary
   (myAge >= 13 && myAge <= 19) ? print('Teenager') : print('Not a Teenager');
 
-  
   const audioState = AudioState.playing;
   switch (audioState) {
-    case AudioState.playing : print('Playing'); break;
-    case AudioState.paused : print('Paused'); break;
-    case AudioState.stopped : print('Stopped'); break;
+    case AudioState.playing:
+      print('Playing');
+      break;
+    case AudioState.paused:
+      print('Paused');
+      break;
+    case AudioState.stopped:
+      print('Stopped');
+      break;
   }
-
-
 
   final user = User();
   final password = Password();
@@ -68,7 +71,7 @@ void main() {
 
   print(password);
   print(password.toJson());
-
+}
 
 class User {
   String name = '';
@@ -158,6 +161,5 @@ var counter = 0;
   print("Fibonacci number $n is $current.");
 */
 
-*/
 
 
